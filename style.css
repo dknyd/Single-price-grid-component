@@ -1,0 +1,199 @@
+@font-face{
+  font-family: "Karla";
+  src: url("font/Karla-VariableFont_wght.ttf")
+}
+
+*{
+    font-family: "Karla";
+}
+
+html{
+    background-color: hsl(204, 43%, 93%);
+}
+
+
+.block{
+    height: 250px;
+    padding: 1.5rem;
+}
+
+/* TOP BLOCK */
+.block_top{
+    background-color: white;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.days{
+    color:hsl(71, 73%, 54%);
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.gain_access{
+    color: hsl(218, 22%, 67%);
+    line-height: 170%;
+    font-weight: 700;
+    font-size: 2ex;
+}
+
+.join-community{
+    color: #2AB2AF;
+    font-size: 25px;
+}
+
+/* MID BLOCK */
+.block_middle{
+    background-color: #2AB2AF;
+}
+
+.monthly_subscription{
+    color: white;
+    font-weight: bold;
+}
+
+.price_tag{
+}
+
+.price{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.per_month{
+    color:  #E5EFF5;
+}
+
+.full_access{
+    color: #E5EFF5;
+    }
+
+.signup{
+  display: flex;
+  color: white;
+  background-color: hsl(71, 73%, 54%);
+  width: auto;
+  height: 3.5rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  margin-top: 40px;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+/* BOTTOM BLOCK */
+.block_bottom{
+    background-color: #2AB2AFCC;
+}
+
+.why_us{
+  color: white;
+  font-size: 25px;
+  margin:20px 20px 20px 40px;
+}
+
+
+ul{
+  color:#E5EFF5;
+  list-style: none;
+  margin: 0px;
+  line-height: 150%;
+}
+
+
+@media screen and (max-width:800px){
+body{
+
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 10%;
+}
+
+.block_bottom{
+  border-radius: 0px 0px 10px 10px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+}
+
+@media screen and (min-width:800px){
+  body{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      margin: 5% 25%;
+
+  }
+
+  .block{
+    overflow: visible;
+  }
+
+.block_top{
+  grid-area: 1/1/2/3;
+    padding: 30px 50px 0px 30px;
+}
+
+.block_middle{
+  border-radius: 0px 0px 0px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  grid-area: 2/1/3/2;
+}
+
+.monthly_subscription{
+    color: white;
+    font-weight: bold;
+    padding-left: 15%;
+}
+
+.price_tag{
+  padding-left: 15%;
+}
+
+.price{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+.per_month{
+    color:  #E5EFF5;
+
+}
+
+.full_access{
+    color: #E5EFF5;
+    padding-left: 15%;
+    }
+
+.signup{
+  width: 15em;
+  align-self: center;
+  justify-self: center;
+}
+
+.block_bottom{
+  border-radius: 0px 0px 10px 0px;
+}
+
+.signup{
+  margin-top: 0px;
+}
+
+ul{
+  margin: 0px;
+}
+
+footer{
+  grid-area: 3/1/4/3;
+  text-align: center;
+}
+
+
+
+}
